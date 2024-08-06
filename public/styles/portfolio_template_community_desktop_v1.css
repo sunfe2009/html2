@@ -1,0 +1,391 @@
+/* Start CSS home - desktop */
+.css_home_FRAME_home {
+  width: 1920px;
+  height: 2710px;
+  background: #FFF;
+}
+.css_home_GROUP_thumbnail_6 {
+  width: 680px;
+  height: 510px;
+  flex-shrink: 0;
+}
+.css_home_TEXT_enterprise_2019 {
+  width: 680px;
+  color: var(--Dark-Grey-60, #73808D);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px/* 120% */;
+  letter-spacing: 0.5px;
+  display: block;
+}
+.css_home_TEXT_project_name {
+  width: 680px;
+  color: var(--Dark-Grey-80, #101214);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px/* 137.5% */;
+  letter-spacing: 1px;
+  display: block;
+}
+.css_home_RECTANGLE_background {
+  width: 680px;
+  height: 410px;
+  flex-shrink: 0;
+  background: #CBD7E4;
+}
+.css_home_GROUP_safari {
+  width: 512px;
+  height: 310px;
+  flex-shrink: 0;
+}
+.css_home_VECTOR_bg {
+  width: 512px;
+  height: 296.529px;
+  flex-shrink: 0;
+  fill: #FFF;
+}
+.css_home_GROUP_interface {
+  width: 512px;
+  height: 13.621px;
+  flex-shrink: 0;
+}
+.css_home_VECTOR_bg {
+  width: 512px;
+  height: 13.621px;
+  flex-shrink: 0;
+  fill: #E5E5E5;
+}
+.css_home_GROUP_adress {
+  width: 226.022px;
+  height: 9.477px;
+  flex-shrink: 0;
+}
+.css_home_VECTOR_combined_shape {
+  width: 226.022px;
+  height: 9.477px;
+  flex-shrink: 0;
+  fill: linear-gradient(135deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.03) 100%)
+  , #FFF;
+  box-shadow: 0 3.866px 15.466px 0 #FFF inset
+  , 0 0.387px 23.198px 0 rgba(0, 0, 0, 0.10) inset;
+}
+.css_home_VECTOR_page_1 {
+  width: 4.686px;
+  height: 5.13px;
+  flex-shrink: 0;
+  fill: #939393;
+}
+.css_home_TEXT_🌏_domain {
+  width: 37.457px;
+  height: 5.735px;
+  flex-shrink: 0;
+  color: #6A6A6A;
+  text-align: center;
+  font-family: Inter;
+  font-size: 5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6px/* 120% */;
+  display: block;
+}
+.css_home_GROUP_new_page {
+  width: 10.216px;
+  height: 9.477px;
+  flex-shrink: 0;
+}
+.css_home_RECTANGLE_combined_shape {
+  width: 10.216px;
+  height: 9.477px;
+  flex-shrink: 0;
+  background: #CACACA;
+}
+.css_home_BOOLEAN_OPERATION_icon {
+  width: 4.682px;
+  height: 4.344px;
+  flex-shrink: 0;
+  fill: #848484;
+}
+.css_home_RECTANGLE_rectangle_16 {
+  width: 0.425px;
+  height: 4.344px;
+  background: #848484;
+}
+.css_home_VECTOR_rectangle_16 {
+  width: 4.682px;
+  height: 0.394px;
+  fill: #848484;
+}
+.css_home_GROUP_sites {
+  width: 16.6px;
+  height: 9.477px;
+  flex-shrink: 0;
+}
+.css_home_VECTOR_combined_shape {
+  width: 16.6px;
+  height: 9.477px;
+  flex-shrink: 0;
+  fill: linear-gradient(135deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.03) 100%)
+  , #FFF;
+  box-shadow: 0 3.866px 15.466px 0 #FFF inset
+  , 0 0.387px 23.198px 0 rgba(0, 0, 0, 0.10) inset;
+}
+.css_home_GROUP_icon {
+  width: 5.11px;
+  height: 4.738px;
+  flex-shrink: 0;
+}
+.css_home_BOOLEAN_OPERATION_combined_shape {
+  width: 3.831px;
+  height: 3.554px;
+  flex-shrink: 0;
+  fill: #939393;
+}
+.css_home_RECTANGLE_rectangle_14 {
+  width: 3.831px;
+  height: 3.554px;
+  border-radius: 0.387px;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle_14 {
+  width: 2.98px;
+  height: 2.764px;
+  border-radius: 0.387px;
+  background: #939393;
+}
+.css_home_GROUP_share {
+  width: 16.6px;
+  height: 9.477px;
+  flex-shrink: 0;
+}
+.css_home_GROUP_icon {
+  width: 4.682px;
+  height: 6.005px;
+  flex-shrink: 0;
+}
+.css_home_BOOLEAN_OPERATION_combined_shape {
+  width: 4.682px;
+  height: 5.529px;
+  flex-shrink: 0;
+  fill: #939393;
+}
+.css_home_BOOLEAN_OPERATION_subtract {
+  width: 4.682px;
+  height: 3.949px;
+  fill: #DADADA;
+}
+.css_home_RECTANGLE_rectangle_9 {
+  width: 4.682px;
+  height: 3.949px;
+  border-radius: 0.387px;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle_9 {
+  width: 3.831px;
+  height: 3.159px;
+  border-radius: 0.387px;
+  background: #939393;
+}
+.css_home_RECTANGLE_combined_shape {
+  width: 1.279px;
+  height: 0.79px;
+  background: #939393;
+}
+.css_home_VECTOR_rectangle_11 {
+  width: 0.425px;
+  height: 3.554px;
+  fill: #939393;
+}
+.css_home_RECTANGLE_rectangle_12 {
+  width: 0.411px;
+  height: 2.054px;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle_12 {
+  width: 0.411px;
+  height: 2.054px;
+  transform: rotate(-135deg);
+  flex-shrink: 0;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle_13 {
+  width: 0.41px;
+  height: 0.41px;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  background: #939393;
+}
+.css_home_GROUP_dots {
+  width: 22.134px;
+  height: 4.739px;
+  flex-shrink: 0;
+}
+.css_home_VECTOR_combined_shape {
+  width: 5.108px;
+  height: 4.739px;
+  flex-shrink: 0;
+  fill: #D4D4D4;
+}
+.css_home_GROUP_arrows {
+  width: 22.56px;
+  height: 9.477px;
+  flex-shrink: 0;
+}
+.css_home_GROUP_left {
+  width: 11.067px;
+  height: 9.477px;
+  flex-shrink: 0;
+}
+.css_home_VECTOR_combined_shape {
+  width: 11.067px;
+  height: 9.477px;
+  flex-shrink: 0;
+  fill: linear-gradient(135deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.03) 100%)
+  , #FFF;
+  box-shadow: 0 3.866px 15.466px 0 #FFF inset
+  , 0 0.387px 23.198px 0 rgba(0, 0, 0, 0.10) inset;
+}
+.css_home_VECTOR_path {
+  width: 2.82px;
+  height: 4.739px;
+  flex-shrink: 0;
+  fill: #939393;
+}
+.css_home_GROUP_right {
+  width: 11.067px;
+  height: 9.477px;
+  flex-shrink: 0;
+}
+.css_home_GROUP_tabs {
+  width: 16.6px;
+  height: 9.477px;
+  flex-shrink: 0;
+}
+.css_home_BOOLEAN_OPERATION_combined_shape {
+  width: 6.385px;
+  height: 4.739px;
+  flex-shrink: 0;
+  fill: #939393;
+}
+.css_home_BOOLEAN_OPERATION_subtract {
+  width: 6.385px;
+  height: 4.739px;
+  fill: #DADADA;
+}
+.css_home_RECTANGLE_rectangle_5 {
+  width: 6.385px;
+  height: 4.739px;
+  border-radius: 0.387px;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle_5 {
+  width: 5.533px;
+  height: 3.949px;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle {
+  width: 0.425px;
+  height: 4.739px;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle_2 {
+  width: 0.853px;
+  height: 0.394px;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle_3 {
+  width: 0.853px;
+  height: 0.394px;
+  background: #939393;
+}
+.css_home_RECTANGLE_rectangle_4 {
+  width: 0.853px;
+  height: 0.394px;
+  background: #939393;
+}
+.css_home_GROUP_thumbnail_5 {
+  width: 680px;
+  height: 510px;
+  flex-shrink: 0;
+}
+.css_home_GROUP_thumbnail_4 {
+  width: 680px;
+  height: 510px;
+  flex-shrink: 0;
+}
+.css_home_TEXT_project_name {
+  color: var(--Dark-Grey-80, #101214);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px/* 137.5% */;
+  letter-spacing: 1px;
+  display: block;
+}
+.css_home_RECTANGLE_background {
+  width: 680px;
+  height: 410px;
+  flex-shrink: 0;
+  background: #DBECFF;
+}
+.css_home_GROUP_thumbnail_3 {
+  width: 680px;
+  height: 510px;
+  flex-shrink: 0;
+}
+.css_home_RECTANGLE_background {
+  width: 680px;
+  height: 410px;
+  flex-shrink: 0;
+  background: #FFEFD7;
+}
+.css_home_GROUP_thumbnail_2 {
+  width: 680px;
+  height: 510px;
+  flex-shrink: 0;
+}
+.css_home_RECTANGLE_background {
+  width: 680px;
+  height: 410px;
+  flex-shrink: 0;
+  background: #D6F3F3;
+}
+.css_home_GROUP_thumbnail_1 {
+  width: 680px;
+  height: 510px;
+  flex-shrink: 0;
+}
+.css_home_GROUP_intro {
+  width: 1444px;
+  height: 396px;
+  flex-shrink: 0;
+}
+.css_home_TEXT_im_a_product_designer_with_ui_and_ux_skills_who_love_to_build_powerful_and_elegant_products_with_x_years_of_experience_in_the_tech_industry_im_current {
+  width: 1440px;
+  color: var(--Dark-Grey-80, #101214);
+  font-family: Inter;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px/* 142.857% */;
+  letter-spacing: 1px;
+  display: block;
+}
+.css_home_RECTANGLE_hello_imgStromstik {
+  flex-shrink: 0;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  width: 100%;
+  height: 40.5px;
+}
+.css_home_RECTANGLE_hello_imgStromstik img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+} /* End CSS home - desktop */

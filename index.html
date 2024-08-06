@@ -1,15 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000" />
-    <meta name="description" content="Web site created using Locofy" />
-    <title>locofy-react-project</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-  </body>
-</html>
+				<head>
+					<script src="https://stromstik.com/scripts/plugin.jquery.js"></script>
+
+								<script>
+				function getURL(targetURI = null, targetPageID = null, targetLangID = null, targetCurrencyID = null) {
+					
+					$.isLang = false;
+					$.isLangCurrency = false;
+
+					$.pages = JSON.parse('{"11728":"imported"}');
+					$.pagesReverse = JSON.parse('{"imported":11728,"\/":11728}');
+					$.currentPageID = $(document.body).attr('data-pageID');
+
+					$.languages = JSON.parse('{"40":"en"}');
+					$.currentLangID = $(document.body).attr('data-langID');
+
+					$.currencies = JSON.parse('{"97":"usd"}');
+					$.currentCurrencyID = $(document.body).attr('data-currencyID');
+
+					String.prototype.ltrim = function(text) {
+						return this.replace(new RegExp('^(' + (text == undefined ? '\\s' : text) + ')*'), '');
+					};
+
+					String.prototype.rtrim = function(text) {
+						return this.replace(new RegExp('(' + (text == undefined ? '\\s' : text) + ')*$'), '');
+					};
+
+					function getTypeData(parseURL) {
+						parseURL = '/' + parseURL;
+
+						anchor = '';
+						if (parseURL.includes('#')) {
+							anchor = '#' + parseURL.split('#')[1];
+							parseURL = parseURL.split('#')[0];
+						}
+
+						parseURL = parseURL.split('/?')[0];
+						parseURL = parseURL.split('?')[0];
+						parseURL = parseURL.split('.').pop();
+						parseURL = parseURL.split(':').pop();
+						temp = parseURL.split('/');
+						temp.shift();
+						parseURL = temp.join('/');
+						parseURL = '/' + parseURL.ltrim('/').rtrim('/') + '/';
+
+						result = [];
+						result['anchor'] = anchor;
+
+						if (parseURL.includes('cms/page')) {
+							// /cms/page/PAGE_ID/lang/LANG_ID
+							// /cms/page/PAGE_ID/lang/LANG_ID/view
+
+							locale = parseURL.split('lang/')[1].split('/')[0];
+
+							result['pageID'] = targetPageID ? targetPageID : parseURL.split('page/')[1].split('/lang')[0];
+							result['pageURL'] = $.pages[result['pageID']] ? $.pages[result['pageID']] : '';
+
+							result['langID'] = targetLangID ? targetLangID : locale.split('-')[0];
+							result['langCode'] = $.languages[result['langID']];
+
+							result['currencyID'] = targetCurrencyID ? targetCurrencyID : (locale.split('-')[1] ? locale.split('-')[1] : $.currentCurrencyID);
+							result['currencyCode'] = $.currencies[result['currencyID']];
+						} else {
+							// /PAGE_URL
+							// /LOCALE/PAGE_URL
+
+							isLang = false;
+
+							if ((parseURL.charAt(2) ?? null) == '/')
+								isLang = true;
+
+							isLangCurrency = false;
+
+							if ((parseURL.charAt(2) ?? null) == '-')
+								isLangCurrency = true;
+
+							locale = '';
+
+							if (isLang || isLangCurrency) {
+								locale = parseURL.split('/')[0];
+								parseURL = '/' + parseURL.split('/')[1];
+							}
+
+							result['pageID'] = targetPageID ? targetPageID : $.pagesReverse['/' + parseURL.ltrim('/').rtrim('/')];
+							result['pageURL'] = $.pages[result['pageID']] ? $.pages[result['pageID']] : '';
+
+							result['langID'] = targetLangID ? targetLangID : (locale.split('-')[0] ? locale.split('-')[0] : $.currentLangID);
+							result['langCode'] = $.languages[result['langID']];
+
+							result['currencyID'] = targetCurrencyID ? targetCurrencyID : (locale.split('-')[1] ? locale.split('-')[1] : $.currentCurrencyID);
+							result['currencyCode'] = $.currencies[result['currencyID']];
+						}
+
+						return result;
+					}
+
+					url = '';
+					typeData = targetURI ? getTypeData(targetURI) : getTypeData(location.pathname);
+
+					// /cms/page/PAGE_ID/lang/LANG_ID
+					if (!url && location.pathname.includes('cms/page') && !location.pathname.includes('/view'))
+						url = '/cms/page/' + typeData['pageID'] + '/lang/' + typeData['langID'] + '-' + typeData['currencyID'];
+
+					// /cms/page/PAGE_ID/lang/LANG_ID/view
+					if (!url && location.pathname.includes('cms/page') && location.pathname.includes('/view'))
+						url = '/cms/page/' + typeData['pageID'] + '/lang/' + typeData['langID'] + '-' + typeData['currencyID'] + '/view' + typeData['anchor'];
+
+					// /PAGE_URL
+					if (!url && !$.isLang && !$.isLangCurrency)
+						url = (targetURI == '/' ? '/' : typeData['pageURL']) + typeData['anchor'];
+
+					// /LANG_CODE/PAGE_URL
+					if (!url && $.isLang && !$.isLangCurrency)
+						url = '/' + typeData['langCode'] + (targetURI == '/' ? '/' : typeData['pageURL']) + typeData['anchor'];
+
+					// /LOCALE/PAGE_URL
+					if (!url && $.isLangCurrency) 
+						url = '/' + typeData['langCode'] + '-' + typeData['currencyCode'] + (targetURI == '/' ? '/' : typeData['pageURL']) + typeData['anchor'];
+
+					return url;
+				}
+			</script>
+		
+					
+																									<link rel="stylesheet" href="/public/styles/portfolio_template_community_desktop_v1.css">
+											
+					
+									</head>
+
+				<body data-projectID="3623" data-pageID="11728" data-pageSpecificID="-" data-langID="40" data-currencyID="97" data-defaultPageID="11728" data-articlePageID="" data-articleListPageID="" data-productPageID="" data-categoryPageID="" data-defaultLangID="40" data-defaultCurrencyID="97">
+																
+																
+					
+										
+									</body>
+			
